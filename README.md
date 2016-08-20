@@ -9,7 +9,7 @@ Getting everything setup can be a real hassle. With this repo you have a complet
 1. Install Docker
 1. Clone this repo (init or replace the git submodule `src`)
 1. `docker-compose up` in the root of the cloned repo.
-1. Open `localhost:3000` in your browser.
+1. Open `localhost:80` in your browser.
 
 
 
