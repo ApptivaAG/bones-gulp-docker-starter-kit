@@ -1,0 +1,35 @@
+version: '2'
+services:
+  gulp:
+    build: .
+    volumes:
+      - "./:/data"
+      - "/data/node_modules"
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - "./.data/db:/var/lib/mysql"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes: 
+      - "./build:/var/www/html/wp-content/themes/bones"
+    ports:
+      - "80:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: starterkit
