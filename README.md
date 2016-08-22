@@ -10,12 +10,20 @@ Getting everything setup can be a real hassle. With this repo you have a complet
 1. Clone this repo (init or replace the git submodule `src`)
 1. `docker-compose up` in the root of the cloned repo.
 1. Open `localhost:80` in your browser.
+1. Follow the process to setup WordPress.
+1. Go to `Themes` and activate the Bones theme.
 
 
 
 ## BONES
 
-`src` is a sub module with the bones repository. This will give a working theme, but you should replace is with a clone or another theme.
+The theme in the `src` folder is from the [Bones Starter Theme](https://github.com/eddiemachado/bones/) project.
+
+
+### UPDATE THE THEME
+
+It was added to this repo with the subtree merge strategy. To pull the last changes from it follow this [guide](https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging).
+
 
 
 ## ORGANIZATION
@@ -29,6 +37,7 @@ This starter kit uses `src`, `build`, and `dist` folders to organize theme devel
 Note: both the `build` and `dist` directories are disposable and can be regenerated from the contents of `src`. You aren't likely to want to edit files in this folders but you may want to open them up to diagnose issues with the build process itself.
 
 
+
 ## DOCKER
 
 This starter kit is so easy and fast thanks to Docker.
@@ -38,7 +47,9 @@ If you start this starter kit multiple times you need to rename the DB name (`WO
 
 ## THANKS
 
-This starter kit is based on the work of [Synapticism](https://github.com/synapticism/wordpress-gulp-starter-kit). Thank you!
+* The theme in the `src` folder is from the amazing [Bones Starter Theme](https://github.com/eddiemachado/bones/). Thank you!
+* This starter kit is based on the work of [Synapticism](https://github.com/synapticism/wordpress-gulp-starter-kit). Thank you!
+
 
 
 ## MAINTAINER
