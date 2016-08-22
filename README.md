@@ -1,13 +1,13 @@
 # A WordPress Starter Kit for Bones with Gulp and Docker
 
-Getting everything setup can be a real hassle. With this repo you have a complete development environment setup with one single command!
+Getting everything setup can be a real hassle. With this repo you have a complete development environment setup with one single command and you don't pollute your system with a local Wordpress and MySQL installation.
 
 
 
 ## INSTALLATION
 
 1. Install Docker
-1. Clone this repo (init or replace the git submodule `src`)
+1. Clone this repo
 1. `docker-compose up` in the root of the cloned repo.
 1. Open `localhost:80` in your browser.
 1. Follow the process to setup WordPress.
