@@ -1,6 +1,6 @@
-FROM alpine:3.3
+FROM node:6
 
-RUN apk add --update nodejs python build-base && npm i -g gulp
+RUN npm i -g gulp
 
 WORKDIR /data
 
