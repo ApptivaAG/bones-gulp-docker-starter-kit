@@ -8,8 +8,8 @@ Getting everything setup can be a real hassle. With this repo you have a complet
 
 1. Install Docker
 1. Clone this repo
-1. `docker-compose up` in the root of the cloned repo.
-1. Open `localhost:80` in your browser.
+1. `docker-compose up -d` in the root of the cloned repo.
+1. Open `localhost:3000` in your browser.
 1. Follow the process to setup WordPress.
 1. Go to `Themes` and activate the Bones theme.
 
@@ -41,7 +41,6 @@ Note: both the `build` and `dist` directories are disposable and can be regenera
 ## DOCKER
 
 This starter kit is so easy and fast thanks to Docker.
-If you start this starter kit multiple times you need to rename the DB name (`WORDPRESS_DB_NAME`) in the `docker-compose.yml` otherwise you will have conflicts. The DB will be shared in case you don't rename it!  
 
 
 
@@ -54,4 +53,4 @@ If you start this starter kit multiple times you need to rename the DB name (`WO
 
 ## MAINTAINER
 
-Made by [Apptiva](www.apptiva.ch) with ♥️
+Made with ♥️ by [Apptiva](www.apptiva.ch)
