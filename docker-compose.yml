@@ -1,7 +1,7 @@
 version: '2'
 services:
   gulp:
-    build: ./images/gulp_image
+    image: apptiva/gulp-bones
     volumes:
       - "./:/data"
       - "/data/node_modules"
@@ -10,7 +10,7 @@ services:
       - 3001:3001
 
   wordpress:
-    build: ./images/wordpress_image
+    image: apptiva/wordpress-dev
     depends_on:
       - mysql
     image: wordpress
