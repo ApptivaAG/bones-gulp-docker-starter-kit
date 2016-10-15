@@ -11,7 +11,7 @@ Getting everything setup can be a real hassle. With this repo you have a complet
 1. `docker-compose up -d` in the root of the cloned repo.
 1. Open `localhost:3000` in your browser.
 1. Follow the process to setup WordPress.
-1. Go to `Themes` and activate the Bones theme.
+1. Start to make changes to the `src/` files and see your browser refreshing automatically.
 
 
 
@@ -41,6 +41,13 @@ Note: both the `build` and `dist` directories are disposable and can be regenera
 ## DOCKER
 
 This starter kit is so easy and fast thanks to Docker.
+
+Execute `docker-compose` commands in the root folder of this project.
+
+* Initialize: `docker-compose up -d` (only first time for a new project)
+* Stop: `docker-compose stop`
+* Start: `docker-compose start`
+* Restart gulp: `docker-compose restart gulp`
 
 
 
