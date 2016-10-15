@@ -1,7 +1,7 @@
 version: '2'
 services:
   gulp:
-    build: .
+    build: ./images/gulp_image
     volumes:
       - "./:/data"
       - "/data/node_modules"
@@ -10,11 +10,10 @@ services:
       - 3001:3001
 
   wordpress:
+    build: ./images/wordpress_image
     depends_on:
       - mysql
     image: wordpress
-    ports:
-      - 8080:80
     volumes: 
       - "./build:/var/www/html/wp-content/themes/bones"
     environment:
