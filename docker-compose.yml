@@ -13,7 +13,6 @@ services:
     image: apptiva/wordpress-dev
     depends_on:
       - mysql
-    image: wordpress
     volumes: 
       - "./build:/var/www/html/wp-content/themes/bones"
     environment:
