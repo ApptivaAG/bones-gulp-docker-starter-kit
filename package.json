@@ -20,7 +20,7 @@
     "browsersync",
     "livereload"
   ],
-  "author": "Alexander Synaptic <alexander@synapticism.com>",
+  "author": "Apptiva Team <info@apptiva.ch>",
   "license": "GPL-3.0",
   "main": "gulpfile.js",
   "private": true,
@@ -36,6 +36,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.2.4",
     "gulp-rename": "^1.2.2",
+    "gulp-rsync" : "^0.0.7",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
