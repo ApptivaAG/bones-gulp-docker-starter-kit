@@ -132,6 +132,15 @@ module.exports = {
       src: modules+'normalize.css/normalize.css'
     , dest: src+'library/scss'
     , rename: '_normalize.scss'
+  }
+  , deploy: {
+      src: ['dist/'+project+'/**']
+    , server: { 
+        hostname: 'server' // e.g.: 'mt-tour.yamaha-motor.ch'
+      , dest: 'destination folder on remote server' // e.g.: 'www/mt-tour.hostettler.apptiva.ch/wp-content/themes/'
+      , root: 'dist/'  
+      , username: 'ssh user name',
+      }
     }
   },
 

@@ -44,12 +44,16 @@ This starter kit is so easy and fast thanks to Docker.
 
 Execute `docker-compose` commands in the root folder of this project.
 
-* Initialize: `docker-compose up -d` (only first time for a new project)
-* Stop: `docker-compose stop`
-* Start: `docker-compose start`
-* Restart gulp: `docker-compose restart gulp`
-* Show gulp logs: `docker-compose logs gulp`
-* Distribute: `docker-compose run gulp dist`
+* Initialize:               `docker-compose up -d` (only first time for a new project)
+* Stop:                     `docker-compose stop`
+* Start:                    `docker-compose start`
+* Restart gulp:             `docker-compose restart gulp`
+* Show gulp logs:           `docker-compose logs gulp`
+* Distribute:               `docker-compose run gulp dist`
+* Deploy to remote server:  `docker-compose run gulp deploy` 
+  * Make sure you have an id_rsa private key in your user/ssh folder: `~/.ssh/id_rsa`
+  * Make sure your public key is on the remote server
+  * Configure deploy-settings in `gulpconfig.js`
 
 
 
