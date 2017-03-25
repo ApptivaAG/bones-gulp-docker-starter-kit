@@ -49,7 +49,7 @@ Execute `docker-compose` commands in the root folder of this project.
 * Start: `docker-compose start`
 * Restart gulp: `docker-compose restart gulp`
 * Show gulp logs: `docker-compose logs gulp`
-* Distribute: `docker-compose exec gulp gulp dist`
+* Distribute: `docker-compose run gulp dist`
 
 
 
