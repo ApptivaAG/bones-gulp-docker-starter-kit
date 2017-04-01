@@ -5,6 +5,7 @@ services:
     volumes:
       - "./:/data"
       - "/data/node_modules"
+      - "${HOME}/.ssh:/root/.ssh-host"
     ports:
       - 3000:3000
       - 3001:3001
