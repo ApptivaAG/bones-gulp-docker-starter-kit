@@ -13,6 +13,8 @@ Getting everything setup can be a real hassle. With this repo you have a complet
 1. Follow the process to setup WordPress.
 1. Start to make changes to the `src/` files and see your browser refreshing automatically.
 
+To get updated images you first need to pull the newest images with `docker-compose pull` before executing `docker-compose up`.
+
 
 
 ## BONES
