@@ -1,26 +1,42 @@
 {
-  "name": "synapticism/wordpress-gulp-starter-kit",
-  "description": "A WordPress/Gulp/Bower/Sass starter kit",
+  "name": "bones-gulp-docker-starter-kit",
+  "description": "A WordPress/Bones/Gulp/Docker starter kit",
   "keywords": [
     "wordpress",
     "wordpress-theme",
     "wordpress-starter-theme",
     "theme",
     "gulp",
-    "bower",
+    "docker",
     "composer",
-    "sass",
+    "bones",
     "browsersync",
     "livereload"
   ],
-  "homepage": "https://github.com/synapticism/wordpress-gulp-starter-kit",
-  "license": "GPL-3.0",
+  "homepage": "https://github.com/ApptivaAG/bones-gulp-docker-starter-kit",
   "authors": [
     {
-      "name": "Alexander Synaptic",
-      "email": "alexander@synapticism.com",
-      "homepage": "http://alexandersynaptic.com"
+      "name": "Philip Schönholzer",
+      "email": "philip.schoenholzer@apptiva.ch",
+      "homepage": "http://apptiva.ch"
     }
   ],
-  "type": "library"
+  "type": "library",
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0.6",
+    "wp-sync-db/wp-sync-db": "dev-master", 
+    "wp-sync-db/wp-sync-db-media-files": "dev-master",
+    "wpackagist-plugin/relative-url": "dev-trunk"
+  },
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": ["type:wordpress-plugin"]
+    }
+  }
 }

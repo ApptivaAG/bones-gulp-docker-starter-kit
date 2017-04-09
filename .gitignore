@@ -15,6 +15,14 @@ src/library/css/
 
 
 ############
+## Composer
+############
+
+vendor/
+plugins/
+
+
+############
 ## IDEs
 ############
 

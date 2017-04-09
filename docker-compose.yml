@@ -16,6 +16,7 @@ services:
       - mysql
     volumes: 
       - "./build:/var/www/html/wp-content/themes/bones"
+      - "./plugins:/var/www/html/wp-content/plugins"
     environment:
       WORDPRESS_DB_PASSWORD: wordpress
 
@@ -25,3 +26,9 @@ services:
       - /var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
+  
+  composer:
+    image: composer/composer
+    volumes: 
+      - ./:/app
+    command: install
